@@ -1,4 +1,22 @@
 import React from "react";
+<<<<<<< HEAD
+import Heading from "./Heading";
+import Footer from "./Footer";
+import Note from "./Note";
+import notes from "../notes";
+
+export default function App(){
+    return(
+        <div>
+            <Heading/>
+            {notes.map((note) => <Note key = {note.key} title = {note.title} content = {note.content} />)}
+            <Footer/>
+        </div>
+        
+    )
+}
+
+=======
 
 function App() {
   const date = new Date().toLocaleTimeString("en-US", {
@@ -30,3 +48,4 @@ function App() {
 }
 
 export default App;
+>>>>>>> 3b5a95ff8fb4b89ca02097cd2e0eb543d812ae73
