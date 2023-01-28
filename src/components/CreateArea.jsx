@@ -19,7 +19,7 @@ function CreateArea(props) {
         <textarea onChange={handleChange} name="note" placeholder="Take a note..." rows="3" value={inputText.note}/>
         <button onClick={(e)=>{
             props.onAdd(inputText);
-            setText("");
+            setText({title: "", note: ""});
             e.preventDefault();
         }}>Add</button>
       </div>
