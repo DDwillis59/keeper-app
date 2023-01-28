@@ -13,6 +13,14 @@ function App() {
         })
         console.log(notes)
     }
+
+    function deleteNote(id){
+        setNotes(prevNotes =>{
+            return prevNotes.filter((note, index)=>{
+                return index !== id 
+            })
+        })
+    }
   
   return (
     <div>
@@ -26,6 +34,7 @@ function App() {
                 id = {index}
                 title = {noteItem.title}
                 content = {noteItem.note}
+                deleteNote = {deleteNote}
             />
         ) 
       })};
