@@ -31,6 +31,3 @@ This is a notes app that replicates the functionality of Google Keeper, built us
 
 If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request. I am always looking for ways to improve the app!
 
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
